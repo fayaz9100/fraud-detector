@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detector | Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>🚨 Fraud Detector 💳</h2>
+    <a href="/predict">New Check</a>
+</div>
+
+<div class="container">
+    <div class="card center">
+
+        <h1>Prediction Result</h1>
+
+        <h2 class="{{ color }}">{{ prediction }}</h2>
+
+        <h3>Risk Score: {{ risk }}%</h3>
+
+        <p>
+            This transaction was evaluated using a trained
+            Machine Learning model based on transaction behavior
+            and balance patterns.
+        </p>
+
+        <a href="/predict">
+            <button>Check Another Transaction</button>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
