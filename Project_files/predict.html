@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detector 🚨💳 | Predict</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>🚨 Fraud Detector 💳</h2>
+    <a href="/">Home</a>
+</div>
+
+<div class="container">
+    <div class="card">
+
+        <h2>Enter Transaction Details</h2>
+
+        <form action="/result" method="POST">
+
+            <input name="step" placeholder="Step" required>
+            <input name="type" placeholder="Transaction Type (Encoded)" required>
+            <input name="amount" placeholder="Amount" required>
+            <input name="oldbalanceOrg" placeholder="Old Balance Origin" required>
+            <input name="newbalanceOrig" placeholder="New Balance Origin" required>
+            <input name="oldbalanceDest" placeholder="Old Balance Destination" required>
+            <input name="newbalanceDest" placeholder="New Balance Destination" required>
+            <input name="isFlaggedFraud" placeholder="Is Flagged Fraud (0 or 1)" required>
+
+            <button type="submit">Analyze Transaction</button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

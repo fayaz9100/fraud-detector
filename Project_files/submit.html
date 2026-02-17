@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FraudShield AI | Prediction Result</title>
+
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Mobile responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h2>💳 FraudShield AI</h2>
+        <div>
+            <a href="/">Home</a>
+            <a href="/predict">New Prediction</a>
+        </div>
+    </div>
+
+    <!-- RESULT SECTION -->
+    <div class="container">
+        <div class="card">
+
+            <h1>Prediction Result</h1>
+
+            <!-- Dynamic prediction text -->
+            <h2>{{ prediction_text }}</h2>
+
+            <p>
+                This transaction was analyzed in real time using a
+                Machine Learning model trained on historical online
+                payment data.
+            </p>
+
+            <p>
+                The system evaluates transaction behavior, balance
+                changes, and risk indicators to detect fraud.
+            </p>
+
+            <br>
+
+            <!-- CTA -->
+            <a href="/predict">
+                <button>Check Another Transaction</button>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
