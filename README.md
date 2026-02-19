@@ -101,3 +101,8 @@ fraud-detector/
 └── training/
     └── model_training.ipynb
 
+# 🎥 Demo Video
+
+Watch the project demo here:
+
+👉 [Click to Watch Demo](https://drive.google.com/file/d/1Mu-SGven6W-DuSLA6OkPKTyWwwq5iJIf/view?usp=sharing)
